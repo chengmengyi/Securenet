@@ -46,6 +46,6 @@ object ReferrerManager {
         val localReferrer = readLocalReferrer()
         return localReferrer.contains("fb4a")|| localReferrer.contains("facebook")
     }
-    
+
     private fun readLocalReferrer()= MMKV.defaultMMKV().decodeString("securenet_config_referrer")?:""
 }
